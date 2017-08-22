@@ -15,20 +15,14 @@ Input Format:
     Input:18
     Output:10010
 */
+#include<stdio.h>
 
-    #include<stdio.h>
-    #include <stdlib.h>
-    int main()
-    {
-      int r,l=0,a,z[1000];
-      scanf("%d",&a);
-      while(a>0)
-      {
-        z[l]=a%2;
-        a=a/2; 
-        l++;
-      }
-      int m=0;
-      for(m=l-1;m>=0;m--)
-        printf("%d",z[m]);
-     }
+int main(){
+    int a,ans;
+    scanf("%d",&a);
+    while(a>0){
+        ans = ans*10+a%2;
+        a=a/2;
+    }
+    printf("%d",ans);
+}
