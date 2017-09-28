@@ -63,10 +63,10 @@ void printPattern(int a, int b){
       m++;
       }
      else{
-         for(j=l;j>=0;j--)
-          printf("%d",m);
+       m--;
+         for(j=l-1;j>=0;j--)
+          printf("%d ",m);
          printf("\n");
-         m--;
          l--;
       }
   }
