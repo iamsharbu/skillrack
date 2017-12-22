@@ -37,8 +37,8 @@ int main(){
         if(n%2!=0){
             c++;
         }
-        printf("%d",c);
-    }
-}
+     }
+    printf("%d",c);
+  }
 
 
