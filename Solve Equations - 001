@@ -1,0 +1,67 @@
+/*
+Solve Equations - 001
+
+Given two equations EQN1 and EQN2 containing the values of x co-efficient, y co-efficient and the resulting constant, the program must print the value of x and y separated by a space.
+
+Input Format:
+The first line contains the equation EQN1.
+The second line contains the equation EQN2.
+
+Output Format:
+The first line contains the value of x and y separated by a space.
+
+Boundary Conditions:
+1 <= Co-efficient values <= 1000
+
+Example Input/Output 1:
+Input:
+5x+2y=14
+-4y+3x=-2
+
+Output:
+2 2
+
+Example Input/Output 2:
+Input:
+4Y-5X=17
+3X+4Y=9
+
+Output:
+-1 3
+*/
+
+#include <iostream>
+ 
+using namespace std;
+int main(int argc, char** argv){
+  int x,y,z,a,b,c,w;
+  char q;
+  cin>>w>>q;if(q=='x'||q=='X'){x=w;}else y=w;
+  cin>>w>>q; if(q=='y'||q=='Y'){y=w;}else x=w;
+  cin>>q>>z;
+  cin>>w>>q;if(q=='x'||q=='X'){a=w;}else b=w;
+  cin>>w>>q;if(q=='y'||q=='Y'){b=w;}else a=w;
+  cin>>q>>c;
+  int x1,y1,z1,a1,b1;
+  if(x!=a){
+      x1=(x*a)-(a*x);
+      y1=(y*a)-(b*x);
+      z1=(z*a)-(c*x),a1=0;
+      a1=z1/y1;
+      }
+  else{
+      x1=x-a; y1=y-b; z1=z-c;
+      a1=z1/y1;
+    }
+  if(y!=b){
+  x1=(x*b)-(a*y);y1=(y*b)-(b*y);z1=(z*b)-(c*y);
+   b1=(z1/x1); 
+  }
+  else{
+      x1=x-a;y1=y-b;z1=z-c;b1=(z1/x1);
+    }
+  cout<<b1<<" "<<a1;
+
+}
+
+
