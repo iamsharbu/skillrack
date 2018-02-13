@@ -1,4 +1,4 @@
-/*
+"""
 Note: this code was not solved by me
 Unique String Representations
 
@@ -27,7 +27,7 @@ apple
 
 Output:
 60
-*/
+"""
 
 #Your code below
 import math
