@@ -1,3 +1,4 @@
+/*
 Reverse Number
 
 The program must accept a number N and prints the reverse of the number N.
