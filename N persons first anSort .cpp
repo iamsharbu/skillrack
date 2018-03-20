@@ -1,25 +1,42 @@
 /*
-Sort - Odd & Even Ascending (Id-2964) Author: SKILLRACK 
+
+N persons first anSort By Last Name First Name (Id-2962) Author: SKILLRACK 
 Note: not done by me
-An array of N numbers is passed as the input. The program must sort the odd numbers and even numbers separately in ascending order. The odd and even numbers must retain their original odd even slots in the input.
+d last names are passed as input. The program must sort them based on the last name. If the last names are same, then first name must be taken into account to sort.
 
 Input Format:
-The first line contains N indicating the count of numbers in the array.
-The second line contains the N array elements separated by a space.
+The first line contains the value of N.
+Next N lines contain the first name and the last name of N persons, with the values separated by a space.
 
 Output Format:
-The first line contains the N sorted array elements separated by a space.
+N lines containing the N first and last names separated by a space (sorted by last name, first name)
 
 Boundary Conditions:
-2 <= N <= 100
+2 <= N <= 15
+Length of first and last name is between 2 and 50.
 
 Example Input/Output 1:
 Input:
-9
-169 181 298 16 147 263 102 155 141
+7
+Arul Prakash
+Banu Govind
+Abhijit Singh
+Syed Siraj
+George Joshua
+Dhanraj Pillay
+Bhagat Singh
 
 Output:
-141 147 16 102 155 169 298 181 263
+Banu Govind
+George Joshua
+Dhanraj Pillay
+Arul Prakash
+Abhijit Singh
+Bhagat Singh
+Syed Siraj
+
+
+
 */
 
 #include <iostream>
