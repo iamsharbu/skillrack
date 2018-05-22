@@ -45,5 +45,7 @@ int main(int argc, char** argv){
         t+=(a[i]-'0')*(a[j]-'0');
         i++;j--;
     }
+    if(a.length()%2!=0)
+        t+=a[a.length()/2]-'0';
     cout<<t;
 }
